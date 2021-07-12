@@ -23,21 +23,22 @@
         </p>
         <section class="card">
             <section class="card__top">
-                <div class="card__followers"></div>
+                <div class="card__followers">10K pageview</div>
                 <form>
-                    <input class="card__range" type="range" 
+                    <input class="card__range" value = "1" type="range" 
                     min="1" max="5" name="range-of-followers" />
                 </form>
-                <div class="card__price">
-                    <span class="price"></span>
-                    <span class="card__switch">
-                        <span class="card__slide"></span>
-                    </span>
+                <div class="card__price-container">
+                    <span class="card__price"></span>
                     <span>/ mounth</span>
                 </div>
-                <form>
-                    <span>mounthly billing</span>
-                    <span class="card__billing">yearly billing</span>
+                <form class="card__2nd-form">
+                    <div>mounthly billing</div>
+                    <div class="card__switch-container">
+                        <input type="checkbox" class="card__switch" />
+                        <div class="card__toggle"></div>
+                    </div>
+                    <div class="card__billing">yearly billing</span>
                 </form>
             </section>
             <section class="card__buttom">
@@ -55,7 +56,7 @@
                         <span>email reports</span>
                     </li>
                 </ul>
-                <button type="button" class="btn">
+                <button type="button" class="card__btn">
                     start my trial
                 </button>
             </section>
@@ -63,13 +64,7 @@
         </section>
     </main>
 </body>
+<script src="pricing.js"></script>
 </html>
-<!-- m1 -->
-<!-- m2 -->
-<!-- m3 -->
 
-<!-- f1-->
-<!-- f2 -->
-
-<!-- f3 -->
 

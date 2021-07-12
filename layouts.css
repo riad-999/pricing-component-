@@ -1,13 +1,35 @@
 #main-content
 {
-    width:clamp(375px , 95%, 900px);
+    width:clamp(375px , 90%, 800px);
     margin:0 auto;
     text-align: center;
+    margin-top:3rem;
+    margin-bottom: 3rem;
 }
 .card
 {
     display:flex;
     flex-direction: column;
-    margin-top:3rem;
     padding:2rem 1rem;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.5);
+    border-radius: .5rem;
+    margin-top:3rem;
+    z-index: 1;
+    background-color: var(--main-background);
 }
+.card__top
+{
+    border-bottom: solid 1px var(--text);
+    padding-bottom: 1rem;
+}
+.card__buttom
+{
+    padding-top:2rem;
+}
+
+.card__range
+{
+    background-color: var(--strong-cyan);
+}
+
+

@@ -4,8 +4,8 @@
 
     --soft-cyan:hsl(174,77%,80%);
     --strong-cyan:hsl(147,86%,45%);
-    --light-grayigh-red:hsl(15,100%,70%);
-    --light-red:hsl(15, 100%, 70%);
+    --light-grayigh-red:rgb(247, 182, 160);
+    --light-red:hsl(15, 80%, 47%);
     --pale-blue:hsl(226,100%,87%);
 
     --main-background:hsl(230, 100%, 99%);
@@ -16,6 +16,10 @@
 
     font-size:15px;
     font-weight: 600;
+    background-image: url("pattern-circles.svg"),
+    url("bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: auto,100%;
 }
 body
 {
