@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/1ef1b3e9cf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="globale.css" />
+    <link rel="stylesheet" href="layouts.css" />
+    <link rel="stylesheet" href="styling.css" />
+    <title>pricing component</title>
+</head>
+<body>
+    <main id="main-content">
+        <div class="heading">
+            Simple, traffic-based pricing
+        </div>
+        <p>
+            sign in for our 30-day ,no credit card required 
+        </p>
+        <section class="card">
+            <section class="card__top">
+                <div class="card__followers"></div>
+                <form>
+                    <input class="card__range" type="range" 
+                    min="1" max="5" name="range-of-followers" />
+                </form>
+                <div class="card__price">
+                    <span class="price"></span>
+                    <span class="card__switch">
+                        <span class="card__slide"></span>
+                    </span>
+                    <span>/ mounth</span>
+                </div>
+                <form>
+                    <span>mounthly billing</span>
+                    <span class="card__billing">yearly billing</span>
+                </form>
+            </section>
+            <section class="card__buttom">
+                <ul class="card__list">
+                    <li class="card__list-item">
+                        <i class="fas fa-check"></i>
+                        <sapn>unlimited websites</sapn>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="fas fa-check"></i>
+                        <span>100% data ownership</span>
+                    </li>
+                    <li class="card__list-item">
+                        <i class="fas fa-check"></i>
+                        <span>email reports</span>
+                    </li>
+                </ul>
+                <button type="button" class="btn">
+                    start my trial
+                </button>
+            </section>
+
+        </section>
+    </main>
+</body>
+</html>
