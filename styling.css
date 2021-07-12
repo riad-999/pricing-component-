@@ -87,17 +87,18 @@ input[type="range"]
     left:.2rem;
     padding:calc(1rem - .2rem);
     border-radius: 50%;
-    background-color: gray;
+    background-color: var(--btn-bg);
     transition: left .4s;
 }
 
 .discount
 {
-    background-color: var(--light-grayigh-red);
+    background-color: var(--btn-bg);
 }
 .discount .card__toggle
 {
     left:calc(2rem);
+    background-color: white;
 }
 
 .fa-check
@@ -109,9 +110,10 @@ input[type="range"]
 }
 .card__billing::after{
     content: "-25%";
-    color:var(--light-red);
-    background-color: var(--light-grayigh-red);
+    color:var(--btn-txt);
+    background-color: var(--btn-bg);
     padding:.2rem;
+    margin-left: .5rem;
     border-radius: .5rem;
     /* display: block; */
 }
