@@ -1,6 +1,6 @@
 #main-content
 {
-    width:clamp(375px , 90%, 800px);
+    width:clamp(300px , 90%, 800px);
     margin:0 auto;
     text-align: center;
     margin-top:3rem;

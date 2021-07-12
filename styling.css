@@ -32,7 +32,7 @@ input[type="range"]
 }
 .card__billing
 {
-    margin-left:1rem;
+    margin-left:.5rem;
 }
 .card__price-container
 {
@@ -42,9 +42,10 @@ input[type="range"]
 .card__2nd-form
 {
     display:flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
 /* .card__switch
 {
     position: relative;
