@@ -67,6 +67,7 @@ window.addEventListener("load",function()
 // range.addEventListener("mouseup",set_things);
 range.addEventListener("mousemove",set_things);
 range.addEventListener("mouseup",set_things);
+range.addEventListener("click",set_things);
 
 fetch("data.json").then(function(json_promess)
 {
