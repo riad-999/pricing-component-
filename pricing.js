@@ -67,7 +67,7 @@ window.addEventListener("load",function()
 
 
 document.addEventListener("pointermove",set_things);
-range.addEventListener("click",set_things);
+range.addEventListener("pointerup",set_things);
 
 
 // fetch("data.json").then(function(json_promess)
