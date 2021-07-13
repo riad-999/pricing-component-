@@ -59,12 +59,14 @@ card__switch_container.addEventListener("click",function(e)
     }
     set_things();
 });
+
 window.addEventListener("load",function()
 {
     set_things();
 });
+// range.addEventListener("mouseup",set_things);
 range.addEventListener("mousemove",set_things);
-
+range.addEventListener("mouseup",set_things);
 
 fetch("data.json").then(function(json_promess)
 {
