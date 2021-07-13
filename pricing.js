@@ -69,6 +69,10 @@ range.addEventListener("mousemove",set_things);
 fetch("data.json").then(function(json_promess)
 {
     console.log(json_promess);
+    json_promess.json().then(function(data)
+    {   
+        console.log(data);
+    });
 }).catch(function(error)
 {
     console.log(error);
