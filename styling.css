@@ -24,7 +24,6 @@ input[type="range"]
     outline:none;
     cursor: pointer;
     touch-action: none;
-    padding:1rem 0;
 }
 .card__price
 {
