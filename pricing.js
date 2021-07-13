@@ -8,7 +8,7 @@ querySelector(".card__switch-container");
 let discount = false;
 
 
-
+// range.setPointerCapture();
 function set_things()
 {
      let value = range.value;
@@ -44,7 +44,6 @@ function set_things()
 card__switch_container.addEventListener("click",function(e)
 {
     discount = !discount;
-    console.log(discount);
     if(discount)
     {
         percentage = 0.75 ; 
@@ -64,19 +63,21 @@ window.addEventListener("load",function()
 {
     set_things();
 });
-// range.addEventListener("mouseup",set_things);
-range.addEventListener("mousemove",set_things);
-range.addEventListener("mouseup",set_things);
-range.addEventListener("click",set_things);
 
-fetch("data.json").then(function(json_promess)
-{
-    console.log(json_promess);
-    json_promess.json().then(function(data)
-    {   
-        console.log(data);
-    });
-}).catch(function(error)
-{
-    console.log(error);
-});
+
+
+document.addEventListener("pointermove",set_things);
+range.addEventListener("pointerdown",set_things);
+
+
+// fetch("data.json").then(function(json_promess)
+// {
+//     console.log(json_promess);
+//     json_promess.json().then(function(data)
+//     {   
+//         console.log(data);
+//     });
+// }).catch(function(error)
+// {
+//     console.log(error);
+// });
