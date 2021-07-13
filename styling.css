@@ -15,16 +15,59 @@ form,.card__price)
 {
     margin-bottom:2rem;
 }
+input[type="range"]::-moz-range-thumb
+{
+    -webkit-appearance: none;
+    background: var(--strong-cyan);
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    background-image: url("icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    box-shadow: 0 5px 5px 0 hsla(147,86%,45%,.5);
+    border:none;
+}
+input[type="range"]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    background: var(--strong-cyan);
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    background-image: url("icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    box-shadow: 0 5px 5px 0 hsla(147,86%,45%,.5);
+    border:none;
+
+}
 input[type="range"]
 {
     background: var(--soft-cyan);
+    -webkit-appearance: none;
     display:block;
     margin:0 auto;
     width:clamp(100px,100%,200px);
     outline:none;
-    cursor: pointer;
+    border-radius: 10px;
     touch-action: none;
 }
+
+.input[type="range"]:focus
+{
+    outline:none;
+}
+/* input[type="range"]::-ms-track
+{
+    cursor: pointer;
+    background: var(--btn-bg);
+    background-color:red;
+    color:black;
+} */
+
 .card__price
 {
     font-size: 24px;
@@ -68,9 +111,8 @@ input[type="range"]
     z-index:2;
     margin-left:3.5rem;
     position: relative;
-    background-color: var(--empty-slide);
     cursor: pointer;
-    background-color: var(--empty-slide);
+    background-color: var(--soft-cyan);
     border-radius: 1rem;
 }
 .card__switch
@@ -89,18 +131,17 @@ input[type="range"]
     left:.2rem;
     padding:calc(1rem - .2rem);
     border-radius: 50%;
-    background-color: var(--btn-bg);
+    background-color: var(--main-background);
     transition: left .4s;
 }
 
 .discount
 {
-    background-color: var(--btn-bg);
+    background-color: var(--light-red);
 }
 .discount .card__toggle
 {
     left:calc(2rem);
-    background-color: white;
 }
 
 .fa-check
@@ -112,8 +153,8 @@ input[type="range"]
 }
 .card__billing::after{
     content: "-25%";
-    color:var(--btn-txt);
-    background-color: var(--btn-bg);
+    color:var(--light-grayigh-red);
+    background-color: var(--light-red);
     padding:.2rem;
     margin-left: .5rem;
     border-radius: .5rem;
