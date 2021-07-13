@@ -64,3 +64,12 @@ window.addEventListener("load",function()
     set_things();
 });
 range.addEventListener("mousemove",set_things);
+
+
+fetch("data.json").then(function(json_promess)
+{
+    console.log(json_promess);
+}).catch(function(error)
+{
+    console.log(error);
+});
